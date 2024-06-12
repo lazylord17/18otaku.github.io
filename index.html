@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Box</title>
+    <link rel="stylesheet" href="styles11.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-container" id="search-container">
+            <input type="text" id="search-box" placeholder="Search Anime...">
+            <button id="search-button">Search</button>
+        </div>
+        <div id="search-results" class="hidden">
+            <!-- Search results will be displayed here -->
+        </div>
+    </div>
+
+    <div id="anime-data" style="display: none;">
+        <div class="anime" data-mal-id="2372">
+            <div class="episode" data-ep-num="1" data-ep-lan="Raw" data-video-id="txUUTN8Myjk3LY9"></div>
+            <div class="episode" data-ep-num="2" data-ep-lan="Eng-Dub" data-video-id="rcCQSxERMk84EYJ"></div>
+            <div class="episode" data-ep-num="3" data-ep-lan="Eng-Sub" data-video-id="m1S9954wtHnit9G"></div>
+        </div>
+    </div>
+
+    <!-- Modal for video playback -->
+    <div id="video-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <iframe id="video-frame" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="script11.js"></script>
+</body>
+</html>
